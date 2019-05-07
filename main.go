@@ -84,7 +84,7 @@ func main() {
 	})
 	defer db.Close()
 	http.HandleFunc("/increment/", increment)
-	http.HandleFunc("/getcounters/", getCounters)
+	http.HandleFunc("/counters/", getCounters)
 	log.Fatal(http.ListenAndServe(":80", nil))
 
 }
