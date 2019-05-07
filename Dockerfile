@@ -1,5 +1,5 @@
-from alpine
+from debian
 
-ADD . .
+COPY . .
 
-CMD /netbolt 
+CMD ./netbolt
