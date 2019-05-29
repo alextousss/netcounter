@@ -70,7 +70,7 @@ func getCounters(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	var err error
-	db, err = bolt.Open("counter.db", 0666, nil)
+	db, err = bolt.Open("/db/counter.db", 0666, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
